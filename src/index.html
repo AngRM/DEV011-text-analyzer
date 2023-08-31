@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html>
+    <head>
+    </head>
+    <body>
+        <header>
+             <h1>Analizador de Texto</h1>
+             <br>
+        </header>
+        <!-- <img
+          src= "https://img.freepik.com/vector-gratis/ilustracion-pila-libros-diseno-plano-dibujado-mano_23-2149341898.jpg?w=740&t=st=1693445666~exp=1693446266~hmac=f049c3c712381bac4f2403604e38696df16c1a2476615d961af79b4715c04f7e"
+          class="illustration"
+        /> -->
 
-<head>
-  <meta charset="utf-8">
-  <title>Analizador de texto</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+        <div class="contenedor">
+        <br>
+        <link rel="stylesheet" type="text/css" href="style.css">
 
-<body>
-  <script src="index.js" type="module"></script>
-</body>
+     <script src="index.js" type="module"></script>
+
+        <label>Ingresa el texto en el siguiente recuadro:</label>
+
+        <ul class="metricas">
+          
+            <li class= "balloon" data-testid="word-count">  Recuento de palabras:  </li>
+            <li class= "balloon" data-testid="character-count">  Recuento de caracteres </li>
+            <li class= "balloon" data-testid="character-no-spaces-count"> Recuento de caracteres excluyendo espacios</li> <br>
+            <li class= "balloon" data-testid="number-count"> Recuento de números </li>
+            <li class= "balloon" data-testid="number-sum">Suma total de números </li>
+            <li class= "balloon" data-testid="world-lenght-average"> Longitud media de las palabras </li>
+        </ul>
+            <textarea name="user-input" rows="15" cols="50"></textarea>
+        
+      
+            <br><br>
+        <button id="limpiar">Limpiar</button>
+<br><br>
+</div>
+        
+            <footer class="footer-container">
+                <p>Angélica Ríos M.</p>
+            </footer>
+    
+    </body>
 </html>
