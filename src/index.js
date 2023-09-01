@@ -1,12 +1,12 @@
 import analyzer from './analyzer.js';
 document.getElementsByTagName("textarea")[0].onkeyup = function(){
-  let text1 = document.getElementsByTagName("textarea")[0].value;
-    analyzer.getWordCount (text1);
-    analyzer.getCharacterCount (text1);
-    analyzer.getCharacterCountExcludingSpaces (text1);
-    analyzer.getNumberCount (text1);
-    analyzer.getNumberSum (text1);
-    analyzer.getAverageWordLength (text1);
+  const text1 = document.getElementsByTagName("textarea")[0].value;
+  analyzer.getWordCount (text1);
+  analyzer.getCharacterCount (text1);
+  analyzer.getCharacterCountExcludingSpaces (text1);
+  analyzer.getNumberCount (text1);
+  analyzer.getNumberSum (text1);
+  analyzer.getAverageWordLength (text1);
 }   
 document.getElementById("limpiar").onclick =function(){
   document.getElementsByTagName("textarea")[0].value = "";
