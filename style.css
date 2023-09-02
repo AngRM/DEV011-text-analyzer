@@ -14,19 +14,15 @@
 
 
 footer {
-  background-color: #380877; /* Cambia el color de fondo */
-  color: rgb(222, 213, 234); /* Cambia el color del texto */
-  text-align: left; /* Alinea el texto al centro */
+  background-color: #d3c6e6; /* Cambia el color de fondo */
+  color: rgb(38, 10, 75); /* Cambia el color del texto */
+  text-align: center; /* Alinea el texto al centro */
   padding: 3px; /* Añade espaciado interior */
-}
-/* Cambiar el tipo de letra dentro del footer */
-footer p {
-  font-family: 'Fantasy'; 
-  font-size: large;
-  font-style: italic;     
-  font-weight:  bolder;
+  font-size: large;     
+  
 
 }
+
 
 header {
   background-color: #2b2879; /* Cambia el color de fondo del header */
