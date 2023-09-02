@@ -1,0 +1,119 @@
+.contenedor {
+  margin: 2px 0;
+  padding: 6px; /* Espaciado interior */
+  border: 6px groove blue;
+  border-radius: 5px; /* Borde redondeado */
+  background-image:url('Libritos.png');
+  /* background-size: cover;
+  background-position: center; */
+  /* background-color: #bb8ecd; */
+  /* background-image: linear-gradient(to left,pink,orange);
+  background-image: transparency () */
+
+}
+
+
+footer {
+  background-color: #380877; /* Cambia el color de fondo */
+  color: rgb(222, 213, 234); /* Cambia el color del texto */
+  text-align: left; /* Alinea el texto al centro */
+  padding: 3px; /* Añade espaciado interior */
+}
+/* Cambiar el tipo de letra dentro del footer */
+footer p {
+  font-family: 'Fantasy'; 
+  font-size: large;
+  font-style: italic;     
+  font-weight:  bolder;
+
+}
+
+header {
+  background-color: #2b2879; /* Cambia el color de fondo del header */
+  color: rgb(216, 194, 226); /* Cambia el color del texto en el header */
+  padding: 2px; /* Añade espaciado interior alrededor del contenido del header */
+}
+
+/* Estilos para el título dentro del header */
+header h1 {
+  font-size: 27px; /* Cambia el tamaño de la fuente del título */
+}
+
+
+.metricas li.balloon {
+  list-style: none;
+  margin: 10px 0; /* Agrega espaciado vertical entre los elementos */
+  background-color: #bb8ecd; /* Color de fondo */
+  padding: 10px; /* Espaciado interior */
+  border: 10px groove blue;
+  border-radius: 5px; /* Borde redondeado */
+  display: inline-block;
+}
+
+label {
+  font-size: 23px; /* Tamaño de fuente */
+  color: #333; /* Color de texto */
+  font-weight: bolder; /* Peso de la fuente (normal, bold, etc.) */
+  margin-bottom: 19px; /* Margen inferior para separación de elementos */
+  display: block; /* Hace que el label ocupe todo el ancho disponible */
+  /* Otros estilos según tus preferencias */
+}
+
+textarea [name = "user-input"]
+{
+  font-size: 23px; /* Tamaño de fuente */
+  color: #333; /* Color de texto */
+  font-weight: bolder; /* Peso de la fuente (normal, bold, etc.) */
+  margin-bottom: 19px; /* Margen inferior para separación de elementos */
+  display: block; /* Hace que el label ocupe todo el ancho disponible */
+  /* Otros estilos según tus preferencias */
+}
+
+textarea [name = "user-input"] {
+  /* Establece la ruta de la imagen de fondo */
+  background-image: url();
+  
+  /* Define el tamaño del fondo, puedes ajustar esto según tus necesidades */
+  background-size: cover;
+  
+  /* Establece la posición del fondo, puedes ajustar esto también */
+  background-position: center;
+  
+  /* Añade un color de fondo de respaldo si la imagen no se carga o es transparente */
+  background-color: #f2f2f2;
+  
+  /* Define si la imagen debe repetirse (no repetición en este caso) */
+  background-repeat: no-repeat;
+  
+  /* Añade más estilos si es necesario */
+  width: 300px;
+  height: 200px;
+}
+
+
+/* Estilos para el botón "Limpiar" */
+#limpiar {
+  background-color: #35b3d6; /* Cambia el color de fondo */
+  color: #edf4ee; /* Cambia el color del texto */
+  border: none; /* Quita el borde */
+  padding: 10px 20px; /* Añade espaciado interior */
+  font-size: 33px; /* Cambia el tamaño de la fuente */
+  border-radius: 5px; /* Borde redondeado */
+  cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+/* Estilos al pasar el mouse sobre el botón */
+#limpiar:hover {
+  background-color: #1fb261; /* Cambia el color de fondo al pasar el mouse */
+}
+  
+  /* Links that open files in the editor */
+  .fileopener {
+    cursor:pointer;
+    font-weight:bold;
+    border-bottom:3px solid var(--color-primary);
+    color: var(--color-secondary);
+  }
+  .fileopener:hover {
+    border-bottom:3px solid var(--color-secondary);
+  }
