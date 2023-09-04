@@ -14,20 +14,25 @@
 
 
 footer {
-  background-color: #d3c6e6; /* Cambia el color de fondo */
-  color: rgb(38, 10, 75); /* Cambia el color del texto */
+  background-color: #d9d0e7; /* Cambia el color de fondo */
+  color: rgb(82, 23, 52); /* Cambia el color del texto */
   text-align: center; /* Alinea el texto al centro */
-  padding: 3px; /* Añade espaciado interior */
-  font-size: large;     
-  
-
+  padding: center; /* Añade espaciado interior */
+  font-size: large;
+}
+em {
+  color: rgb(32, 109, 86);
 }
 
-
 header {
-  background-color: #2b2879; /* Cambia el color de fondo del header */
-  color: rgb(216, 194, 226); /* Cambia el color del texto en el header */
-  padding: 2px; /* Añade espaciado interior alrededor del contenido del header */
+  color: rgb(117, 32, 99); /* Cambia el color del texto en el header */
+  text-align: center; /* Alinea el texto al centro */
+  padding: 2em;
+  font-size:larger;     
+  border-radius:0cm; /* Borde redondeado */
+}
+span {
+  background-color: rgb(101, 184, 166);
 }
 
 /* Estilos para el título dentro del header */
@@ -36,15 +41,18 @@ header h1 {
 }
 
 
-.metricas li.balloon {
+.cajaMetricas li.balloon {
   list-style: none;
   margin: 10px 0; /* Agrega espaciado vertical entre los elementos */
-  background-color: #bb8ecd; /* Color de fondo */
-  padding: 10px; /* Espaciado interior */
-  border: 10px groove blue;
-  border-radius: 5px; /* Borde redondeado */
-  display: inline-block;
+  background-color: #f3f1ef; /* Color de fondo */
+  padding:unset; /* Espaciado interior */
+  border: 1px groove rgb(27, 148, 148);
+  border-radius: 3px; /* Borde redondeado */
+  display:grid;
+ 
+ 
 }
+
 
 label {
   font-size: 23px; /* Tamaño de fuente */

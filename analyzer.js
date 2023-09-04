@@ -1,7 +1,7 @@
 const analyzer = {  
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    const palabra = document.querySelector ('li[data-testid="word-count"]');
+    // const palabra = document.querySelector ('li[data-testid="word-count"]');
     const contadorPalabras = text.trim();
     const palabras = contadorPalabras.split(" ");
     let total = 0;
@@ -10,14 +10,16 @@ const analyzer = {
     }else{
       total = palabras.length;
     }
-    palabra.innerText = 'Recuento de palabras: ' + total;
+    return total;
+    // palabra.innerText = 'Recuento de palabras: ' + total;
   },
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-    const caracter = document.querySelector ('li[data-testid="character-count"]');
+    // const caracter = document.querySelector ('li[data-testid="character-count"]');
     const contadorCaracteres = text.trim();
     const caracteres = contadorCaracteres.length;
-    caracter.innerText= 'Recuento de caracteres:' + caracteres;
+    return caracteres;
+    // caracter.innerText= 'Recuento de caracteres:' + caracteres;
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
@@ -65,7 +67,7 @@ const analyzer = {
   },
   getNumberSum: (text) => {
   //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    const sumaNumeros = document.querySelector ('li[data-testid="number-sum"]');
+    // const sumaNumeros = document.querySelector ('li[data-testid="number-sum"]');
     let sN = 0
     for (let i = 0; i < text.length; i++) {
       const iterar3 = text [i];
@@ -73,7 +75,8 @@ const analyzer = {
         sN += parseInt(iterar3, 10);
       }     
     }
-    sumaNumeros.innerText = 'Suma total de números: ' + sN;  
+    return sN
+    // sumaNumeros.innerText = 'Suma total de números: ' + sN;  
   },
 };
 
