@@ -50,15 +50,13 @@ const analyzer = {
 
   getNumberCount: (text) => {
     // TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    let contador = 0;
-    let cuentaConDecimal = [];
-    const cuentaNumeros = /\b\d+\.\d+\b/g;
-    cuentaConDecimal = text.match(cuentaNumeros);
-    if (cuentaConDecimal.length === null){
+    const regex = /\b\d+(\.\d+)?\b/g; //buscar numeros en el texto 
+    const matches = text.match(regex); //devuelve las condicionales que se establecieron enla parte superior
+    if (!matches)
+    {
       return 0;
     }
-    contador = cuentaConDecimal.length;
-    return contador;
+    return matches.length;
   },
   getNumberSum: (text) => {
   //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.

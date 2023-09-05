@@ -30,7 +30,7 @@ body {
 ul {
   /* Establecer list-style-type en "none" para quitar las viñetas */
   list-style-type: none;
-  display:block;
+  display:block; 
 
 .balloon {
   background-color: #cbf8eb;
