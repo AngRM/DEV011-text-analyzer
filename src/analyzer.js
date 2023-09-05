@@ -1,7 +1,6 @@
 const analyzer = {  
   getWordCount: (text) => {
     //TODO: esta función debe retornar el recuento de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    const palabra = document.querySelector ('li[data-testid="word-count"]');
     const contadorPalabras = text.trim();
     const palabras = contadorPalabras.split(" ");
     let total = 0;
@@ -10,72 +9,73 @@ const analyzer = {
     }else{
       total = palabras.length;
     }
-    palabra.innerText = 'Recuento de palabras: ' + total;
+    return total;
   },
   getCharacterCount: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres que se encuentran en el parámetro `text` de tipo `string`.
-    const caracter = document.querySelector ('li[data-testid="character-count"]');
     const contadorCaracteres = text.trim();
     const caracteres = contadorCaracteres.length;
-    caracter.innerText= 'Recuento de caracteres:' + caracteres;
+    return caracteres;
   },
   getCharacterCountExcludingSpaces: (text) => {
     //TODO: esta función debe retornar el recuento de caracteres excluyendo espacios y signos de puntuación que se encuentran en el parámetro `text` de tipo `string`.
-    const sinEspacios = document.querySelector ('li[data-testid="character-no-spaces-count"]');
+    const caracteresSinP = [',', '.', '/', '#', '!', '$', '%', '^', '&', '*', ';', ':', '{', '}', '=', '-', '_', '`', '~', '(', ')', '[', ']', '@', '"', "'", '¡', '¿'];
+    let textoFiltrado = '';
     const contadorSinEspaciosExternos= text.trim();
-    const sinEspaciosSplit = contadorSinEspaciosExternos.split(" ");
-    const sinEspaciosJoin = sinEspaciosSplit.join ("");
-    let longSinEspacios = sinEspaciosJoin.length;
-    sinEspacios.innerText = 'Recuento de caracteres excluyendo espacios: ' + longSinEspacios++;
-
+    for (let i=0; i<contadorSinEspaciosExternos.length; i++) {
+      const char =text.charAt(i);
+      if (char !== ' ' && !caracteresSinP.includes(char)) {
+        textoFiltrado += char;
+      }
+    }
+    const longitud = textoFiltrado.length;
+    return longitud;
   },
   getAverageWordLength: (text) => {    
     //TODO: esta función debe retornar la longitud media de palabras que se encuentran en el parámetro `text` de tipo `string`.
-    const promedio = document.querySelector ('li[data-testid="world-lenght-average"]');
+    // const promedio = document.querySelector ('li[data-testid="world-lenght-average"]');
     const contadorPalabras2 = text.trim();
     const palabras2 = contadorPalabras2.split(" ");
     const totalPalabras2 = palabras2.length;
     let sumaLongitudes = 0;
-
     for (let i = 0; i < palabras2.length; i++) {
       sumaLongitudes += palabras2 [i].length;
     }
-    let promedioLongitud = 0
+    let promedioLongitud = 0;
     if (totalPalabras2 > 0 ) {
       promedioLongitud = sumaLongitudes / totalPalabras2;
     }
-    promedio.innerText = 'Longitud media de las palabras: ' +  promedioLongitud.toFixed(2);
+    return (parseFloat(promedioLongitud.toFixed(2)));
   },
-  getNumberCount: (text) => {
-    //TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
-    const cuentaNumeros = document.querySelector ('li[data-testid="number-count"]');
-    let cN = 0;
 
-    for (let i = 0; i < text.length; i++) 
-    {
-      const iterar2 = text [i];
-      if (iterar2 >= '0' && iterar2 <= '9') {
-        cN++;
-      }
-      if (iterar2[0] === ""){
-        cN = 0;
-      }
+  getNumberCount: (text) => {
+    // TODO: esta función debe retornar cúantos números se encuentran en el parámetro `text` de tipo `string`.
+    let contador = 0;
+    let cuentaConDecimal = [];
+    const cuentaNumeros = /\b\d+\.\d+\b/g;
+    cuentaConDecimal = text.match(cuentaNumeros);
+    if (cuentaConDecimal.length === null){
+      return 0;
     }
-    cuentaNumeros.innerText = 'Recuento de números: ' + cN;  
+    contador = cuentaConDecimal.length;
+    return contador;
   },
   getNumberSum: (text) => {
   //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    const sumaNumeros = document.querySelector ('li[data-testid="number-sum"]');
-    let sN = 0
-    for (let i = 0; i < text.length; i++) {
-      const iterar3 = text [i];
-      if (iterar3 >= '0' && iterar3 <= '9') {
-        sN += parseInt(iterar3, 10);
-      }     
-    }
-    sumaNumeros.innerText = 'Suma total de números: ' + sN;  
+    // let sN = 0
+    // for (let i = 0; i < text.length; i++) {
+    //   const iterar3 = text [i];
+    //   if (iterar3 >= '0' && iterar3 <= '9') {
+    //     sN += parseInt(iterar3, 10);
+    //   }     
+    // }
+    // return sN
+    const cuentaNumerosSuma = /(\d+(\.\d+)?)/g;
+    const cuentaConDecimalSuma = text.match(cuentaNumerosSuma);
+    const sumaNumeros= cuentaConDecimalSuma.reduce ((resultado,elemento)=> resultado + parseFloat (elemento), 0);
+    return sumaNumeros; 
   },
-};
+}; 
 
 export default analyzer;
 
