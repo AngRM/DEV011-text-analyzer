@@ -1,79 +1,94 @@
 header {
-  color: rgb(117, 32, 99); /* Cambia el color del texto en el header */
+  color: rgb(18, 88, 180); /* Cambia el color del texto en el header */
   text-align: center; /* Alinea el texto al centro */
   padding: 2em;
-  font-size:larger;     
-  border-radius:0cm; /* Borde redondeado */
+  font-size:6px;     
+  border-radius:9cm; /* Borde redondeado */
 }
 span {
-  background-color: rgb(101, 184, 166);
+  background-color: rgb(232, 245, 242);
+  border-radius:0.1cm; 
 }
 
 /* Estilos para el título dentro del header */
 header h1 {
-  font-size: 27px; /* Cambia el tamaño de la fuente del título */
+  font-size: 39px;
+  font-family: monospace; /* Cambia el tamaño de la fuente del título */
 }
 
 footer {
-  background-color: #d9d0e7; /* Cambia el color de fondo */
-  color: rgb(82, 23, 52); /* Cambia el color del texto */
-  text-align: center; /* Alinea el texto al centro */
+  background-color: #d4eeea98; /* Cambia el color de fondo */
+  text-align:end; /* Alinea el texto al centro */
   padding: center; /* Añade espaciado interior */
   font-size: large;
 }
 em {
-  color: rgb(32, 109, 86);
+  color: rgb(32, 122, 95);
 }
 body {
-  background: linear-gradient(to bottom, #f5f7f6, #a4e2eb);
+  background: linear-gradient(to bottom, #e4f5f0, #bcccc5cb);
 }
 ul {
   /* Establecer list-style-type en "none" para quitar las viñetas */
   list-style-type: none;
-  display:block; 
+  /* display:flex;  */
+  /* margin: 3px 39; Añade espacio vertical entre los elementos <li> */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 .balloon {
-  background-color: #cbf8eb;
-  border-radius: 5px;
-  color: #333;
-  padding: 5px;
-  margin-bottom: 5px;
-  font-size: 16px; /* Cambia el tamaño de la fuente */
-  line-height: 1.5; /* Ajusta el espaciado entre líneas */
-  border: 1px solid #ccc; /* Agrega un borde */
-  max-width: 300px; /* Ajusta el ancho máximo deseado */
+  background-color: #fdfcfcea;
+  border-radius: 9px;
+  color: #0a000e;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 13px; 
+  font-family: monospace;
+  line-height: 1;
+  border: 1px solid #f1f2f3; /* Cambia el tamaño de la fuente */
+  max-width: 400px; /* Ajusta el ancho máximo deseado */
   overflow: hidden; /* Evita que el contenido desborde */
   display: inline-block;
+  white-space:nowrap; /* Aumenta la separación horizontal entre elementos */
+  text-align: center; /* Centrar horizontalmente */
+
 }
 
 .balloon2 {
-  background-color: #a0d8f1;
-  border-radius: 5px;
-  color: #333;
-  padding: 5px;
-  margin-bottom: 5px;
-  font-size: 16px; /* Cambia el tamaño de la fuente */
-  line-height: 1.5; /* Ajusta el espaciado entre líneas */
-  border: 1px solid #ccc; /* Agrega un borde */
+  background-color: #fdfcfcea;
+  border-radius: 9px;
+  color: #0a000e;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 13px; 
+  font-family: monospace;
+  line-height: 1;
+  border: 1px solid #eef2f3; /* Cambia el tamaño de la fuente */
   max-width: 300px; /* Ajusta el ancho máximo deseado */
   overflow: hidden; /* Evita que el contenido desborde */
   display: inline-block;
+  white-space: nowrap;  /* Aumenta la separación horizontal entre elementos */
+  text-align: center; /* Centrar verticalmente */ 
+
 }
-}
+
+
 .contenedor {
     display:flex;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
-    height: 33vh; /* Establece la altura del contenedor al 100% del viewport */
+    height: 16vh; /* Establece la altura del contenedor al 100% del viewport */
   }
+
+
 
 textarea[name="user-input"] {
   width: 96%; /* Ancho deseado */
   height: 99px; /* Altura deseada */
-  margin: 3 auto; /* Centrar horizontalmente */
-  border: 1px solid #4954e7;
-  padding: 3px;
-  text-align: center;
+  border: 1px solid #32e4d5;
+  padding: 6px;
+  text-align:left
 }
 
 textarea[placeholder="Ingresa el texto a analizar:"] {
@@ -84,11 +99,12 @@ textarea[placeholder="Ingresa el texto a analizar:"] {
 
 /* Estilos para el botón "Limpiar" */
 #limpiar {
-  background-color: #35b3d6; /* Cambia el color de fondo */
+  background-color: #3954a0; /* Cambia el color de fondo */
   color: #edf4ee; /* Cambia el color del texto */
   border: none; /* Quita el borde */
   padding: 6px 12px; /* Añade espaciado interior */
-  font-size: 23px; /* Cambia el tamaño de la fuente */
+  font-size: 19px;
+  font-family:monospace;
   border-radius: 5px; /* Borde redondeado */
   cursor: pointer; /* Cambia el cursor al pasar el mouse */
   text-align: center;
@@ -101,9 +117,3 @@ textarea[placeholder="Ingresa el texto a analizar:"] {
   background-color: #1fb261; /* Cambia el color de fondo al pasar el mouse */
 }
   
-.contenedorBoton {
-  display:flex;
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  height: 33vh; /* Establece la altura del contenedor al 100% del viewport */
-}
