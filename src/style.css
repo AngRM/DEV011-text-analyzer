@@ -2,12 +2,13 @@ header {
   color: rgb(135, 34, 202); /* Cambia el color del texto en el header */
   text-align: center; /* Alinea el texto al centro */
   padding: 2em;
-  font-size:6px;     
+  font-size:16px;     
   border-radius:9cm; /* Borde redondeado */
 }
 span {
   background-color: rgb(249, 247, 250);
   border-radius:0.1cm; 
+  font-size:66px; 
 }
 
 /* Estilos para el título dentro del header */
@@ -50,7 +51,7 @@ ul {
   color: #0a000e;
   padding: 12px;
   margin-bottom: 20px;
-  font-size: 19px; 
+  font-size: 30px; 
   font-family: monospace;
   line-height: 1;
   border: 1px solid #f1f2f3; /* Cambia el tamaño de la fuente */
@@ -68,7 +69,7 @@ ul {
   color: #0a000e;
   padding: 12px;
   margin-bottom: 20px;
-  font-size: 19px; 
+  font-size: 33px; 
   font-family: monospace;
   line-height: 1;
   border: 1px solid #eef2f3; /* Cambia el tamaño de la fuente */
@@ -85,7 +86,7 @@ ul {
     display:flex;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
-    height: 19vh; /* Establece la altura del contenedor al 100% del viewport */
+    height: 27vh; /* Establece la altura del contenedor al 100% del viewport */
   }
 
 
@@ -110,12 +111,12 @@ textarea[placeholder="Ingresa el texto a analizar:"] {
   color: #f5eff5; /* Cambia el color del texto */
   border: none; /* Quita el borde */
   padding: 6px 12px; /* Añade espaciado interior */
-  font-size: 23px;
+  font-size: 30px;
   font-family:monospace;
   border-radius: 5px; /* Borde redondeado */
   cursor: pointer; /* Cambia el cursor al pasar el mouse */
   text-align: center;
-  max-width: 300px; /* Establece un ancho máximo deseado */
+  max-width: 500px; /* Establece un ancho máximo deseado */
   margin: 0 auto; /* Centra horizontalmente */
 }
 
