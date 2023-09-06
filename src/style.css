@@ -1,12 +1,12 @@
 header {
-  color: rgb(18, 88, 180); /* Cambia el color del texto en el header */
+  color: rgb(135, 34, 202); /* Cambia el color del texto en el header */
   text-align: center; /* Alinea el texto al centro */
   padding: 2em;
   font-size:6px;     
   border-radius:9cm; /* Borde redondeado */
 }
 span {
-  background-color: rgb(205, 238, 236);
+  background-color: rgb(234, 231, 235);
   border-radius:0.1cm; 
 }
 
@@ -17,16 +17,16 @@ header h1 {
 }
 
 footer {
-  background-color: #5fdb5b98; /* Cambia el color de fondo */
+  background-color: #e6becf98; /* Cambia el color de fondo */
   text-align:end; /* Alinea el texto al centro */
   padding: center; /* Añade espaciado interior */
   font-size: large;
 }
 em {
-  color: rgb(5, 43, 100);
+  color: rgb(64, 9, 75);
 }
 body {
-  background: linear-gradient(to bottom, #e4f5f0, #05f124cb);
+  background: linear-gradient(to bottom, #e4f5f0, #f00f8b56);
 }
 ul {
   /* Establecer list-style-type en "none" para quitar las viñetas */
@@ -86,21 +86,21 @@ ul {
 textarea[name="user-input"] {
   width: 96%; /* Ancho deseado */
   height: 99px; /* Altura deseada */
-  border: 1px solid #32e4d5;
+  border: 1px solid #990eac;
   padding: 6px;
   text-align:left
 }
 
 textarea[placeholder="Ingresa el texto a analizar:"] {
   /* Estilos para el <textarea> con placeholder igual a "Ingresa el texto a analizar:" */
-  background-color: #edf1f1;
+  background-color: #f7f1f5;
   color: #02000c;
 }
 
 /* Estilos para el botón "Limpiar" */
 #limpiar {
-  background-color: #3954a0; /* Cambia el color de fondo */
-  color: #edf4ee; /* Cambia el color del texto */
+  background-color: #641977; /* Cambia el color de fondo */
+  color: #f5eff5; /* Cambia el color del texto */
   border: none; /* Quita el borde */
   padding: 6px 12px; /* Añade espaciado interior */
   font-size: 19px;
@@ -114,6 +114,6 @@ textarea[placeholder="Ingresa el texto a analizar:"] {
 
 /* Estilos al pasar el mouse sobre el botón */
 #limpiar:hover {
-  background-color: #1fb261; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #e60d60; /* Cambia el color de fondo al pasar el mouse */
 }
   
