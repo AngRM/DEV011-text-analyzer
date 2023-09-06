@@ -6,7 +6,7 @@ header {
   border-radius:9cm; /* Borde redondeado */
 }
 span {
-  background-color: rgb(232, 245, 242);
+  background-color: rgb(205, 238, 236);
   border-radius:0.1cm; 
 }
 
@@ -17,16 +17,16 @@ header h1 {
 }
 
 footer {
-  background-color: #d4eeea98; /* Cambia el color de fondo */
+  background-color: #5fdb5b98; /* Cambia el color de fondo */
   text-align:end; /* Alinea el texto al centro */
   padding: center; /* Añade espaciado interior */
   font-size: large;
 }
 em {
-  color: rgb(32, 122, 95);
+  color: rgb(5, 43, 100);
 }
 body {
-  background: linear-gradient(to bottom, #e4f5f0, #bcccc5cb);
+  background: linear-gradient(to bottom, #e4f5f0, #05f124cb);
 }
 ul {
   /* Establecer list-style-type en "none" para quitar las viñetas */
