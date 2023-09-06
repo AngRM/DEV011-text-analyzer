@@ -59,19 +59,13 @@ const analyzer = {
     return matches.length;
   },
   getNumberSum: (text) => {
-  //TODO: esta función debe retornar la suma de todos los números que se encuentran en el parámetro `text` de tipo `string`.
-    // let sN = 0
-    // for (let i = 0; i < text.length; i++) {
-    //   const iterar3 = text [i];
-    //   if (iterar3 >= '0' && iterar3 <= '9') {
-    //     sN += parseInt(iterar3, 10);
-    //   }     
-    // }
-    // return sN
-    const cuentaNumerosSuma = /(\d+(\.\d+)?)/g;
+    const cuentaNumerosSuma = /\b\d+(\.\d+)?\b/g;
     const cuentaConDecimalSuma = text.match(cuentaNumerosSuma);
-    const sumaNumeros= cuentaConDecimalSuma.reduce ((resultado,elemento)=> resultado + parseFloat (elemento), 0);
-    return sumaNumeros; 
+    if (!cuentaConDecimalSuma){
+      return 0;
+    }
+    const sumaNumeros = cuentaConDecimalSuma.reduce ((resultado,elemento)=> resultado + parseFloat (elemento), 0);
+    return sumaNumeros;  
   },
 }; 
 
