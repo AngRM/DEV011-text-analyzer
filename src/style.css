@@ -6,7 +6,7 @@ header {
   border-radius:9cm; /* Borde redondeado */
 }
 span {
-  background-color: rgb(234, 231, 235);
+  background-color: rgb(249, 247, 250);
   border-radius:0.1cm; 
 }
 
@@ -17,7 +17,7 @@ header h1 {
 }
 
 footer {
-  background-color: #e6becf98; /* Cambia el color de fondo */
+  background-color: #f7f0f398; /* Cambia el color de fondo */
   text-align:end; /* Alinea el texto al centro */
   padding: center; /* Añade espaciado interior */
   font-size: large;
@@ -26,7 +26,7 @@ em {
   color: rgb(64, 9, 75);
 }
 body {
-  background: linear-gradient(to bottom, #e4f5f0, #f00f8b56);
+  background: linear-gradient(to bottom, #f6f8f8, #fcfafc56);
 }
 ul {
   /* Establecer list-style-type en "none" para quitar las viñetas */
@@ -38,7 +38,7 @@ ul {
 }
 
 .balloon {
-  background-color: #fdfcfcea;
+  background-color: #f2d1fcea;
   border-radius: 9px;
   color: #0a000e;
   padding: 12px;
@@ -56,7 +56,7 @@ ul {
 }
 
 .balloon2 {
-  background-color: #fdfcfcea;
+  background-color: #f1b9e1ea;
   border-radius: 9px;
   color: #0a000e;
   padding: 12px;
