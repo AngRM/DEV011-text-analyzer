@@ -89,8 +89,6 @@ ul {
     height: 23vh; /* Establece la altura del contenedor al 100% del viewport */
   }
 
-
-
 textarea[name="user-input"] {
   width: 96%; /* Ancho deseado */
   height: 99px; /* Altura deseada */
