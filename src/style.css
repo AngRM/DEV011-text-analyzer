@@ -21,12 +21,19 @@ footer {
   text-align:end; /* Alinea el texto al centro */
   padding: center; /* Añade espaciado interior */
   font-size: large;
+  margin-top: auto; /* Coloca el pie de página en la parte inferior */
 }
 em {
   color: rgb(64, 9, 75);
 }
+@media (max-width: 768px) {}
 body {
   background: linear-gradient(to bottom, #f6f8f8, #fcfafc56);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 ul {
   /* Establecer list-style-type en "none" para quitar las viñetas */
@@ -43,7 +50,7 @@ ul {
   color: #0a000e;
   padding: 12px;
   margin-bottom: 20px;
-  font-size: 13px; 
+  font-size: 19px; 
   font-family: monospace;
   line-height: 1;
   border: 1px solid #f1f2f3; /* Cambia el tamaño de la fuente */
@@ -61,7 +68,7 @@ ul {
   color: #0a000e;
   padding: 12px;
   margin-bottom: 20px;
-  font-size: 13px; 
+  font-size: 19px; 
   font-family: monospace;
   line-height: 1;
   border: 1px solid #eef2f3; /* Cambia el tamaño de la fuente */
@@ -78,7 +85,7 @@ ul {
     display:flex;
     justify-content: center; /* Centrar horizontalmente */
     align-items: center; /* Centrar verticalmente */
-    height: 16vh; /* Establece la altura del contenedor al 100% del viewport */
+    height: 19vh; /* Establece la altura del contenedor al 100% del viewport */
   }
 
 
@@ -103,12 +110,12 @@ textarea[placeholder="Ingresa el texto a analizar:"] {
   color: #f5eff5; /* Cambia el color del texto */
   border: none; /* Quita el borde */
   padding: 6px 12px; /* Añade espaciado interior */
-  font-size: 19px;
+  font-size: 23px;
   font-family:monospace;
   border-radius: 5px; /* Borde redondeado */
   cursor: pointer; /* Cambia el cursor al pasar el mouse */
   text-align: center;
-  max-width: 200px; /* Establece un ancho máximo deseado */
+  max-width: 300px; /* Establece un ancho máximo deseado */
   margin: 0 auto; /* Centra horizontalmente */
 }
 
